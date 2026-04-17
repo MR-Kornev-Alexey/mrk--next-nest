@@ -88,7 +88,7 @@ export class FormSubmission {
   @Column({
     name: 'budget_9',
     type: 'enum',
-    enum: ['up_to_50k', '100k_250k', '250k_500k', 'over_500k'],
+    enum: ['up_to_50k', '100k_150k', '150k_300k', 'over_300k'],
     nullable: true,
   })
   budget_9: string;

@@ -8,6 +8,7 @@ RUN yarn install
 COPY . .
 RUN yarn build
 
+
 FROM node:22-alpine AS runner
 WORKDIR /app
 
