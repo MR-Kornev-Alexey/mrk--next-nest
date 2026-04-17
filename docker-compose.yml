@@ -13,6 +13,7 @@ services:
     depends_on:
       - frontend
       - backend
+      - audit-frontend
     restart: unless-stopped
     networks:
       - app-network
@@ -20,6 +21,20 @@ services:
   frontend:
     build: ./frontend
     container_name: nextjs-frontend
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  audit-frontend:
+    build:
+      context: ./audit-form-frontend
+      args:
+        - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+    container_name: audit-form-frontend
     expose:
       - "3000"
     environment:
