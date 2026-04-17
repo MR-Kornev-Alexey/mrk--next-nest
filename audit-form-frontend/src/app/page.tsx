@@ -203,7 +203,7 @@ export default function HomePage() {
 
         try {
             // 1. Авторизация
-            const authResponse = await fetch('https://mrk.digital/auth/register', {
+            const authResponse = await fetch('https://mrk.digital/api/auth/register', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
