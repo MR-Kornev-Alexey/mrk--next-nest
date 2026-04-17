@@ -468,7 +468,7 @@ export default function HomePage() {
                                 <Typography sx={{color: colors.text.primary}}>
                                     Я даю согласие на обработку персональных данных в соответствии с{' '}
                                     <Link
-                                        href="/privacy"
+                                        href="https://elenakorneva.ru/privacy"
                                         sx={{
                                             color: '#A67C52 !important',
                                             textDecoration: 'underline',
