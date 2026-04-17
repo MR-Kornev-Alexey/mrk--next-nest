@@ -203,7 +203,7 @@ export default function HomePage() {
 
         try {
             // 1. Авторизация
-            const authResponse = await fetch('http://localhost:5000/auth/register', {
+            const authResponse = await fetch('https://mrk.digital/auth/register', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -230,7 +230,7 @@ export default function HomePage() {
             }
             // https://mrk.digital/api/form/submit
             // 2. Отправка анкеты
-            const formResponse = await fetch('http://localhost:5000/form/submit', {
+            const formResponse = await fetch('https://mrk.digital/api/form/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
