@@ -6,7 +6,7 @@ import { theme } from './theme';
 
 export const metadata: Metadata = {
     title: 'Анкета индивидуального сопровождения',
-    description: 'Анкета для родителей детей с СДВГ',
+    description: 'Анкета для родителей',
 };
 
 export default function RootLayout({
